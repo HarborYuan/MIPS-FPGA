@@ -1,0 +1,28 @@
+Command line:
+   Top_OExp03_IP2SOC_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49162
+
+Wed Jan 06 19:17:42 2016
+
+
+ Elaboration Time: 0.234001 sec
+
+ Current Memory Usage: 1328.89 Meg
+
+ Total Signals          : 447
+ Total Nets             : 2519
+ Total Signal Drivers   : 166
+ Total Blocks           : 47
+ Total Primitive Blocks : 39
+ Total Processes        : 204
+ Total Traceable Variables  : 460
+ Total Scalar Nets and Variables : 127203
+
+ Total Simulation Time: 0.374402 sec
+
+ Current Memory Usage: 1486.15 Meg
+
+Wed Jan 06 19:18:41 2016
+

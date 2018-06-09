@@ -1,0 +1,1 @@
+sch2hdl,-sympath,D:/task1/src,-sympath,D:/task1/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,D:/task1/OExp01_MUX.vf,-w,D:/task1/src/OExp01_MUX.sch

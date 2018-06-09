@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/task1/task1.xst" -ofn "D:/task1/task1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -sd ipcore_dir -nt timestamp -uc src/Org-Sword.ucf -p xc7k160t-ffg676-2L task1.ngc task1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o task1_map.ncd task1.ngd task1.pcf 
+par -w -intstyle ise -ol high -mt off task1_map.ncd task1.ncd task1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml task1.twx task1.ncd -o task1.twr task1.pcf 
+bitgen -intstyle ise -f task1.ut task1.ncd 
+xst -intstyle ise -ifn "D:/task1/task1.xst" -ofn "D:/task1/task1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -sd ipcore_dir -nt timestamp -uc src/Org-Sword.ucf -p xc7k160t-ffg676-2L task1.ngc task1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o task1_map.ncd task1.ngd task1.pcf 

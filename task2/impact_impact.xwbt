@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\task2\impact.xsl
+OUTFILE=D:\task2\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\task2
+LICENSE=iMPACT
+USER_INFO=iMPACT
