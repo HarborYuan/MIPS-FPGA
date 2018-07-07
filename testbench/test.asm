@@ -10,7 +10,7 @@ start:
             lui	    $3, 0xf000			    #$3=0xF0000000
             lui     $8, 0xe000              #$8=0xE0000000
             lui     $29,0xFFF7
-			addi    $4,$0, 0x0001           #$4=0x00000001
+            addi    $4,$0, 0x0001           #$4=0x00000001
             addi    $6,$0, 0x0004           #$6=0x00000004
             nor     $1,$0,$0                #$1=0xFFFFFFFF
             addi    $10,$1,-1               #$10=0xFFFFFFFE
@@ -44,19 +44,19 @@ Loop:
 
 L00:		
             bne	    $1, $10, L3		        # r10 L3
-			nor     $10, $0, $0	            # r10=0xffffffff
-			addu    $10, $10, $10		    # r10=0xfffffffe
+            nor     $10, $0, $0	            # r10=0xffffffff
+            addu    $10, $10, $10		    # r10=0xfffffffe
 L3:			
             sw      $10, 0($8)			    # SW[4:3]=00
-			j	    Loop
+            j	    Loop
 L11:		
             lw      $9, 0x40($17)
-			sw      $9, 0x0($8)				# SW[4:3]=11，显示七段图形
-			j       Loop
+            sw      $9, 0x0($8)				# SW[4:3]=11，显示七段图形
+            j       Loop
 L01:		
             lw      $9, 0($17)
-			sw      $9, 0($8)				# SW[4:3]=01,七段显示预置数字
-			j       Loop
+            sw      $9, 0($8)				# SW[4:3]=01,七段显示预置数字
+            j       Loop
 L10:        
             sw      $17, 0($8)
             j       Loop
